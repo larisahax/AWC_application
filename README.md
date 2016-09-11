@@ -1,0 +1,2 @@
+# AWC
+Adaptive Weights Clustering
