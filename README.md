@@ -42,14 +42,12 @@ These are two dimensional data sets taken from https://github.com/deric/clusteri
 3) Gaussian data
 
 One can test AWC also on data from Gaussian distribution.
-Button (2 Norm data)  will generate 2 clusters from Normal distribution
-N_1 points from N((0,0), I)
-N_2 points from N((distance,0), I)
+Button (2 Norm data)  will generate 2 clusters from Normal distribution:
+N_1 points from N((0,0), Identity)
+N_2 points from N((distance,0), Identity)
 
-button (3 Norm data) will generate 3 clusters with (distance) between means
-N_1 points from N(, I)
-N_2 points from N(, I)
-N_3 points from N(, I)
+Button (3 Norm data) will generate 3 normal clusters with (distance) between means and identtiy variance:
+N_1, N_2, N_3 points in the first, second and third cluster correspondingly.
 
 (N_1,N_2,N_3) and (distance) are flexible.
 
@@ -57,33 +55,39 @@ N_3 points from N(, I)
 
 After selecting data AWC uploads the data and is ready for launch.
 
-To see the final result of AWC press (Show)
+To see the final result of AWC press (Show).
 
-It is possible to see the clustering process for each point.
-Select a point in the window (AWC weights for one point), select  (movie) and then (Show)
-The results for the selected point will be shown in dynamics.
-
-Also it is possible to see the result of each step
-For that choose (step-by-step) and (Show)
-Only one step will be taken each time you press
+It is possible to see the result of each step.
+For that choose (step-by-step) and push (Show)
+Only one step will be taken each time you press (Show).
 
 To see the results for step k, choose the step (step k) and select (step-by-step)
 
-If one wants to see the dynamics for a selected point started from step k, choose (step k), select a point in (AWC weights for one point), then select (movie) and press (Show).
+Also it is possible to see the clustering process for each point.
+Select a point in the window (AWC weights for one point), select  (movie) and then (Show).
+The results for the selected point will be shown in dynamics.
+(the regime (movie) perhaps will work slowly because of slow drawing, not the AWC)
+
+Moreover if one wants to see the dynamics for a selected point started from step k, choose (step k), select a point in (AWC weights for one point), then select (movie) and press (Show).
 
 **Windows:**
 
 On the left there are 4 windows
-(AWC weights) - the weight matrix at the current step
-(AWC weights for one point) - weight values of the selected point with the rest colored from red to white (from high to low)
-(AWC clustering) - clustering based on weight matrix (plotting is heavy)
-(true/wanted clustering) - true (for ready data) and right (for normal Cluster) Clustering
+(AWC weights) - the weight matrix at the current step (white means 1, black is 0)
+
+(AWC weights for one point) - shows the weights values between the selected point and the rest. The higher the weight, darker the color (from red to white - from 1 to 0). In other words this window shows one raw of the weight matrix at the current step
+
+(AWC clustering) - clustering based on weight matrix
+
+(true/wanted clustering) - true (for ready data) and optimal (for normal cluster) clustering.
+
 Top Right window 
-(True / wanted weights) - true (for ready data) and the right (for normal cluster) weight matrix
+
+(True / wanted weights) - true (for ready data) and the optimal (for normal cluster) weight matrix.
 
 **Launch AWC**
 
-1) The (Lambda) parameter is set as recommended for given data sample, but it can be changed as desire
+1) The (Lambda) parameter is set as recommended for given data sample, but it can be changed as desired.
 
 2) (Show) shows the final result after the last step.
 
@@ -95,13 +99,17 @@ Also one can select a point and see it’s weights in the window (AWC weights fo
 5) By selecting (movie) and pressing (Show) the changes in all windows will be shown non-stop started from the selected step (1 sec per step).
 So it is possible to observe how connections of a point spread gradually.
 
-6) If choose (step-by-step) without (movie), then after pressing (Show) the results of the step k+1 will be shown.
+6) By selecting (step-by-step) without (movie), and pressing (Show) the results of the step k+1 will be shown.
 
 7) Also errors (error union) and (error propagation) are shown
+
 (error union) - counts all connections (positive weights) between points from different clusters
+
 (error propagation) -  indicates the number of disconnecting points in the same cluster
 
-The button (Quit) quits the application.
+The errors are normalized to 0-1.
+
+The button (Quit) closes the application.
 
 
 
