@@ -53,7 +53,7 @@ N_3 points from N(, I)
 
 (N_1,N_2,N_3) and (distance) are flexible.
 
-Launch Examples:
+**Launch Examples:**
 
 After selecting data AWC uploads the data and is ready for launch.
 
@@ -71,7 +71,7 @@ To see the results for step k, choose the step (step k) and select (step-by-step
 
 If one wants to see the dynamics for a selected point started from step k, choose (step k), select a point in (AWC weights for one point), then select (movie) and press (Show).
 
- Windows:
+**Windows:**
 
 On the left there are 4 windows
 (AWC weights) - the weight matrix at the current step
@@ -81,23 +81,23 @@ On the left there are 4 windows
 Top Right window 
 (True / wanted weights) - true (for ready data) and the right (for normal cluster) weight matrix
 
-Launch AWC
+**Launch AWC**
 
-1)The (Lambda) parameter is set as recommended for given data sample, but it can be changed as desire
+1) The (Lambda) parameter is set as recommended for given data sample, but it can be changed as desire
 
-2)(Show) shows the final result after the last step.
+2) (Show) shows the final result after the last step.
 
-3)If (clustering) is selected then the clustering based on the weights matrix will be shown in the window (AWC clustering) 
+3) If (clustering) is selected then the clustering based on the weights matrix will be shown in the window (AWC clustering) 
 
-4)If you are interested in specific step, it’s possible to select step k.
+4) If you are interested in specific step, it’s possible to select step k.
 Also one can select a point and see it’s weights in the window (AWC weights for one point) 
 
 5) By selecting (movie) and pressing (Show) the changes in all windows will be shown non-stop started from the selected step (1 sec per step).
 So it is possible to observe how connections of a point spread gradually.
 
-6)If choose (step-by-step) without (movie), then after pressing (Show) the results of the step k+1 will be shown.
+6) If choose (step-by-step) without (movie), then after pressing (Show) the results of the step k+1 will be shown.
 
-7)Also errors (error union) and (error propagation) are shown
+7) Also errors (error union) and (error propagation) are shown
 (error union) - counts all connections (positive weights) between points from different clusters
 (error propagation) -  indicates the number of disconnecting points in the same cluster
 
