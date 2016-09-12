@@ -1,7 +1,9 @@
 # AWC
 Adaptive Weights Clustering
 
-This code shows the performance of the AWC algorithm on several data sets.
+Authors: K. Efimov, L. Adamyan, V. Spokoiny
+
+This application demonstrates the performance of the AWC algorithm on several data sets.
 
 Requirements:
 python version 2.7
@@ -9,7 +11,6 @@ python version 2.7
 libraries:
 matplotlib
 scipy
-igraph
 math
 numpy
 pylab
