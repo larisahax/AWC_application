@@ -9,16 +9,16 @@ Requirements:
 python version 2.7
 
 libraries:
-matplotlib
-scipy
-math
-numpy
-pylab
-sklearn
+matplotlib;
+scipy;
+math;
+numpy;
+pylab;
+sklearn;
 Tkinter
 
 
-Run the AWC application: python AWC_app.py
+Run the AWC application: \textit{python AWC_app.py}
 
 Data generation
 
