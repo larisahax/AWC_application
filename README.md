@@ -18,13 +18,13 @@ sklearn;
 Tkinter
 
 
-Run the AWC application: \textit{python AWC_app.py}
+Run the AWC application: *python AWC_application.py*
 
-Data generation
+**Data generation**
 
 One can upload data examples by pressing one of the buttons on the right (the optimal \lambda will be set automatically)
 
-1)Real World Data:
+1) Real World Data: \\
 iris, wine, thy, seeds
 
 d is data dimension
