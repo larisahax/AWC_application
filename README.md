@@ -21,34 +21,37 @@ Tkinter
 
 Run the AWC application: *python AWC_application.py*
 
+First of all you need to load the data.
+
 **Data generation**
 
 One can upload data examples by pressing one of the buttons on the right (the optimal \lambda will be set automatically)
 
-1) Real World Data: \\
-iris, wine, thy, seeds
+1) Real World Data: 
+*iris, wine, thy, seeds*
 
-d is data dimension
+*d* is data dimension
 
-The windows show a two-dimensional projection of data using ICA, but the algorithm runs with the initial dimension.
+The windows on the left show a two-dimensional projection of data using ICA, but the algorithm works with the initial dimension.
  
-2)Artificial data:
-compound, orange, aggregation, ds2c2sc13, pathbased, flame, ds4c2sc8, zelnik4
+2) Artificial data:
+*compound, orange, aggregation, ds2c2sc13, pathbased, flame, ds4c2sc8, zelnik4*
 
-These are two dimensional data taken from https://github.com/deric/clustering-benchmark
+These are two dimensional data sets taken from https://github.com/deric/clustering-benchmark
 
 3) Gaussian data
+
 One can test AWC also on data from Gaussian distribution.
-button (2 Norm data)  will generate 2 clusters from Normal distribution
-N_1 points from N((0,0), Var 1)
-N_2 points from N((distance,0), Var 2)
+Button (2 Norm data)  will generate 2 clusters from Normal distribution
+N_1 points from N((0,0), I)
+N_2 points from N((distance,0), I)
 
 button (3 Norm data) will generate 3 clusters with (distance) between means
-N_1 points from N(, Var 1)
-N_2 points from N(, Var 2)
-N_3 points from N(, Var 3)
+N_1 points from N(, I)
+N_2 points from N(, I)
+N_3 points from N(, I)
 
-Matrices (Var 1, Var 2, Var 3), (N_1,N_2,N_3) and (distance) are flexible.
+(N_1,N_2,N_3) and (distance) are flexible.
 
 Launch Examples:
 
