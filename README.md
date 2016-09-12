@@ -30,6 +30,8 @@ One can upload data examples by pressing one of the buttons on the right (the op
 1) Real World Data: 
 *iris, wine, thy, seeds*
 
+These data sets are taken from the UCI repository: https://archive.ics.uci.edu/ml/datasets.html
+
 *d* is data dimension
 
 The windows on the left show a two-dimensional projection of data using ICA, but the algorithm works with the initial dimension.
@@ -109,7 +111,7 @@ So it is possible to observe how connections of a point spread gradually.
 
 The errors are normalized to 0-1.
 
-The button (Quit) closes the application.
+8) The button (Quit) closes the application.
 
 
 
