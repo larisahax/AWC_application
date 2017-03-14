@@ -1,4 +1,4 @@
-# AWC
+# AWC application
 Adaptive Weights Clustering
 
 Authors: K. Efimov, L. Adamyan, V. Spokoiny
